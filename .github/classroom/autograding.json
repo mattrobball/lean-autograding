@@ -2,8 +2,8 @@
     "tests": [
       {
         "name": "Testings 1,2,3",
-        "setup": "curl https://raw.githubusercontent.com/Kha/elan/master/elan-init.sh -sSf | sh -s -- -y && PATH=\"$PATH:/root/.elan/bin\"",
-        "run": "echo \"Hi\"",
+        "setup": "",
+        "run": "curl https://raw.githubusercontent.com/Kha/elan/master/elan-init.sh -sSf | sh -s -- -y && PATH=\"$PATH:/root/.elan/bin\" && lean src/assignment.lean | grep 'error\\|warning'",
         "input": "",
         "output": "",
         "comparison": "included",
