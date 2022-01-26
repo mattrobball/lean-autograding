@@ -1,0 +1,14 @@
+{
+    "tests": [
+      {
+        "name": "Testings 1,2,3",
+        "setup": "",
+        "run": "lean src/assignment.lean | grep 'error\\|warning'",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 10
+      }
+    ]
+  }
