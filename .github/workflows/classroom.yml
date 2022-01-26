@@ -15,7 +15,5 @@ jobs:
           fetch-depth: 0 
       - name: elan and leanproject
         uses: leanprover-contrib/lean-build-action@master
-      - name: check lean is installed 
-        run: lean -v 
       - name: classroom autograding
         uses: education/autograding@v1
