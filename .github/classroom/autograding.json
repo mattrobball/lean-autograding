@@ -2,7 +2,7 @@
     "tests": [
       {
         "name": "Testings 1,2,3",
-        "setup": "PATH=\"$PATH:/root/.elan/bin\"",
+        "setup": "curl https://raw.githubusercontent.com/Kha/elan/master/elan-init.sh -sSf | sh -s -- -y",
         "run": "lean src/assignment.lean | grep 'error\\|warning'",
         "input": "",
         "output": "",

@@ -13,7 +13,5 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 
-      - name: elan and leanproject
-        uses: leanprover-contrib/lean-build-action@master
       - name: classroom autograding
         uses: education/autograding@v1
