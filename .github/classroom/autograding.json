@@ -2,7 +2,7 @@
     "tests": [
       {
         "name": "Testings 1,2,3",
-        "setup": "",
+        "setup": "PATH=\"$PATH:/root/.elan/bin\"",
         "run": "lean src/assignment.lean | grep 'error\\|warning'",
         "input": "",
         "output": "",

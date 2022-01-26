@@ -1,3 +1,1 @@
 variable x : Type 
-
-x 
