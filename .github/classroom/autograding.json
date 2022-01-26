@@ -3,7 +3,7 @@
       {
         "name": "Testings 1,2,3",
         "setup": "curl https://raw.githubusercontent.com/Kha/elan/master/elan-init.sh -sSf | sh -s -- -y && PATH=\"$PATH:/root/.elan/bin\"",
-        "run": "sudo -H leanpkg -v",
+        "run": "cd / && ls -a -R | grep 'lean'",
         "input": "",
         "output": "",
         "comparison": "included",
