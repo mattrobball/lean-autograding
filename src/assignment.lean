@@ -1,1 +1,1 @@
-variables x y z : Type 
+variables x y : Type 
