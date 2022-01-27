@@ -56,10 +56,9 @@ install script and then call `leanpkg` in directory root.
 The file `.test/test.lean` imports `src/assignment.lean` and 
 tests that an exercise of the form 
 ```lean
-lemma exercise : T
+lemma exercise : S
 ```
-has produces a term of the correct type 
-with 
+has produced a term of the correct type `T` with 
 ```lean
 theorem check : T :=
 begin
