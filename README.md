@@ -16,7 +16,10 @@ The advantages of GitHub Classroom for an instructor include:
 on assignments
 - [Autograding](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/use-autograding) 
 that provides immediate feedback allowing for multiple iterations of 
-the submission, feedback, learning cycle. 
+the submission, feedback, learning cycle. All grades are collected 
+and easily exported. 
+- Highly extensible workflow backed by 
+[GitHub Actions](https://github.com/features/actions)
 
 ### Why Lean?
 
@@ -28,4 +31,18 @@ With a Lean verified proof, you can be sure of correctness.
 
 ## Putting them together
 
+The [autograder action](https://github.com/education/autograding) 
+which is configured using `.github/classroom/autograding.json`. 
 
+The fields are 
+- `name`: a name you give to each test to run, e.g. Exercise 5
+- `setup` : shell command to run for setup 
+- `run` : the actual command for scoring the assignment. If it 
+outputs to `stderr` it triggers a failure but this can be 
+congifured using fields below
+- `input` : additional input to your `run` command 
+- `output` : comparison output to that for `run` 
+- `comparison` : how to compare, either `exact`, `included`, or 
+`regex`
+- `timeout` : how long to wait until skipping the test 
+- `point` : possible points for the test
