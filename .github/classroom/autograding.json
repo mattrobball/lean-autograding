@@ -2,8 +2,8 @@
     "tests": [
       {
         "name": "Testings 1,2,3",
-        "setup": "curl https://raw.githubusercontent.com/Kha/elan/master/elan-init.sh -sSf | sh -s -- -y && sudo -H /home/runner/.elan/bin/leanpkg add .",
-        "run": "sudo -H /home/runner/.elan/bin/lean test/test.lean",
+        "setup": "curl https://raw.githubusercontent.com/Kha/elan/master/elan-init.sh -sSf | sh -s -- -y && export PATH=$PATH:/home/runner/.elan/bin; sudo -H leanpkg add .",
+        "run": "sudo -H lean .test/test.lean",
         "output": "",
         "comparison": "included",
         "timeout": 10,
