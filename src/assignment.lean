@@ -1,4 +1,4 @@
-variables x y : Type 
+variables x y z : Type 
 
 lemma exercise : x = x := 
 begin

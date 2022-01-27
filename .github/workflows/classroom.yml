@@ -13,5 +13,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 
+      - run: echo "$HOME/.elan/bin" >> $GITHUB_PATH
       - name: classroom autograding
         uses: education/autograding@v1
