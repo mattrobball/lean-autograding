@@ -2,7 +2,7 @@
     "tests": [
       {
         "name": "Testings 1,2,3",
-        "setup": "curl https://raw.githubusercontent.com/Kha/elan/master/elan-init.sh -sSf | sh -s -- -y && leanpkg add .",
+        "setup": "curl https://raw.githubusercontent.com/Kha/elan/master/elan-init.sh -sSf | sh -s -- -y && sudo -H /home/runner/.elan/bin/leanpkg add .",
         "run": "sudo -H /home/runner/.elan/bin/lean test/test.lean",
         "output": "",
         "comparison": "included",
