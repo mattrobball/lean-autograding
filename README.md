@@ -81,5 +81,5 @@ in the proofs sorry-free.
 First, clone this repository to your account. Then edit `assignment.lean` 
 and `test.lean` to fit your needs. 
 
-When creating your assignment, select your repository  
-as the [template repository](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-an-individual-assignment#choosing-a-template-repository). 
+When creating your assignment, select your repository as the 
+[template repository](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-an-individual-assignment#choosing-a-template-repository). 
