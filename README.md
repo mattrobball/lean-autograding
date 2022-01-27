@@ -29,7 +29,7 @@ verifying correctness of arguments.
 
 With a Lean verified proof, you can be sure of correctness. 
 
-## Putting them together
+## Autograder configuration
 
 The [autograder action](https://github.com/education/autograding) 
 which is configured using `.github/classroom/autograding.json`. 
@@ -44,5 +44,35 @@ congifured using fields below
 - `output` : comparison output to that for `run` 
 - `comparison` : how to compare, either `exact`, `included`, or 
 `regex`
-- `timeout` : how long to wait until skipping the test 
-- `point` : possible points for the test
+- `timeout` : how long to wait in milliseconds until skipping the test 
+- `points` : possible points for the test
+
+## Our setup
+
+We use the `setup` command to call run the 
+[elan](https://github.com/leanprover/elan)
+install script and then call `leanpkg` in directory root. 
+
+The file `.test/test.lean` imports `src/assignment.lean` and 
+tests that an exercise of the form 
+```lean
+emma exercise : T
+```
+has produces a term of the correct type 
+with 
+```lean
+theorem check : T :=
+begin
+  exact exercise, 
+end
+```
+For the test we run `lean .test/test.lean`. 
+
+If `assignment.lean` has errors or warnings, the test fails 
+as these propogate to `test.lean`. 
+
+If `exercise` has the wrong type, then the test fails. 
+
+So far this is fairly basic but suffices for assignments where 
+you provide the lean template and students have to fill 
+in the proofs sorry-free. 
