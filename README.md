@@ -32,7 +32,8 @@ With a Lean verified proof, you can be sure of correctness.
 ## Autograder configuration
 
 The [autograder action](https://github.com/education/autograding) 
-which is configured using `.github/classroom/autograding.json`. 
+is configured using `.github/classroom/autograding.json`. This 
+controls the tests. 
 
 The fields are 
 - `name`: a name you give to each test to run, e.g. Exercise 5
@@ -49,7 +50,7 @@ congifured using fields below
 
 ## Our setup
 
-We use the `setup` command to call run the 
+We use the `setup` command to runthe 
 [elan](https://github.com/leanprover/elan)
 install script and then call `leanpkg` in directory root. 
 
