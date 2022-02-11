@@ -6,7 +6,7 @@
         "run": "sudo -H /home/runner/.elan/bin/lean .test/test.lean",
         "input" : "",
         "output": "",
-        "comparison": "included",
+        "comparison": "equal",
         "timeout": 10,
         "points": 10
       }
