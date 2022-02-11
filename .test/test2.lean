@@ -1,4 +1,5 @@
-import tactic
+import init.meta.tactic
+import system.io
 import assignment
 
 open tactic
@@ -7,7 +8,7 @@ meta def in_import (env : environment) (n : name) (path : string) : bool :=
 (env.decl_olean n = path) && env.contains n && (n ∉ [``quot, ``quot.mk, ``quot.lift, ``quot.ind])
 
 meta def exact_list : list name → tactic unit 
-| [] := failed
+| [] := failed 
 | (H :: Hs) := do 
                   e ← mk_const H,
                   exact e <|> exact_list Hs
@@ -21,8 +22,20 @@ do env <- get_env,
      (λ x, in_import env x (cwd ++ "/src/assignment.lean") && not x.is_internal),
    exact_list assignment_names
 
-theorem check : ∀ (x : Type), x = x :=
+theorem check_problem1 : ∀ (x : Type), x = x :=
 begin
   check_solutions,
 end
-#print axioms check 
+
+#print "Problem 1"
+#print axioms check_problem1
+
+theorem check_problem2 : 0 = 1 :=
+begin
+  check_solutions,
+end
+
+#print "Problem 2"
+#print axioms check_problem2
+
+
