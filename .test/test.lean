@@ -5,4 +5,8 @@ begin
   exact exercise, 
 end
 
-#print axioms check 
+theorem check' : 0 = 1 := 
+begin
+  exact another_exercise, 
+end
+
