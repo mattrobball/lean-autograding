@@ -1,7 +1,0 @@
-/Users/matt/GitHub/lean-autograding/src/assignment.lean:3:0: warning: declaration 'exercise' uses sorry
-/Users/matt/GitHub/lean-autograding/.test/test2.lean:3:0: warning: imported file '/Users/matt/GitHub/lean-autograding/src/assignment.lean' uses sorry
-Problem 1
-no axioms
-Problem 2
-[sorry]
-no axioms
