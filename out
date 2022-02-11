@@ -1,0 +1,23 @@
+/Users/matt/GitHub/lean-autograding/src/assignment.lean:9:0: warning: declaration 'another_exercise' uses sorry
+/Users/matt/GitHub/lean-autograding/src/assignment.lean:11:6: error: definition 'yet_another_exercise' is noncomputable, it depends on 'duh'
+/Users/matt/GitHub/lean-autograding/.test/test2.lean:3:0: warning: imported file '/Users/matt/GitHub/lean-autograding/src/assignment.lean' uses sorry
+Problem 1
+no axioms
+---
+Problem 2
+[sorry]
+no axioms
+---
+/Users/matt/GitHub/lean-autograding/.test/test2.lean:43:8: error: definition 'check_problem3' is noncomputable, it depends on 'yet_another_exercise'
+Problem 3
+duh
+doh
+dah
+---
+/Users/matt/GitHub/lean-autograding/.test/test2.lean:54:2: error: failed
+state:
+⊢ bool
+Problem 4
+[sorry]
+no axioms
+---
